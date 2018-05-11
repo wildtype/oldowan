@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.js$/,
       exclude: /(node_modules|bower_components)/,
       loader: 'babel-loader',
