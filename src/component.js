@@ -1,7 +1,11 @@
 export default class Component {
   constructor() {
-    var element = document.createElement('div');
-    element.innerHTML = 'Hello, webpack';
-    return element;
+    this.name = 'dummy';
+  }
+
+  render() {
+    let span = document.createElement('span');
+    span.innerText = this.name;
+    return span;
   }
 }

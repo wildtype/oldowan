@@ -1,3 +1,4 @@
 import Component from './component';
 
-document.body.appendChild(new Component());
+let component = new Component();
+document.body.appendChild(component.render());
